@@ -444,3 +444,14 @@ nav.navbar a:hover {
   }
 }
 
+/* Bottom navigation bar fixed */
+.navbar-bottom {
+  position: fixed;   /* stays in place */
+  bottom: 0;         /* sticks to bottom */
+  left: 0;
+  width: 100%;       /* full width */
+  background-color: #d4a373; /* bakery theme */
+  padding: 10px 0;
+  box-shadow: 0 -4px 12px rgba(0,0,0,0.1);
+  z-index: 1000;     /* stays above other elements */
+}

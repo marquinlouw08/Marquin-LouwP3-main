@@ -20,60 +20,51 @@
       <li><a href="product.html">Products</a></li>
       <li><a href="enquiry.html">Enquiry</a></li>
       <li><a href="contact.html">Contact</a></li>
+      <li><a href="account.html">Account</a></li>
     </ul>
   </nav>
 
-  <!-- Enquiry box -->
-  <div class="enquiry-container">
-    <h2>Enquiry</h2>
+  <div class="contact-box">
+  <h2>Send Us a Message</h2>
+  <form id="contactForm">
+    <input type="text" name="from_name" placeholder="Your Name" required>
+    <input type="email" name="reply_to" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+</div>
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
+    <!-- Link your JS -->
+  <script src="../contact.js" defer></script>
 
-    <!-- Toggle -->
-    <div class="toggle">
-      <input type="radio" id="loginTab" name="tab" checked>
-      <label for="loginTab">Login</label>
-      <input type="radio" id="signupTab" name="tab">
-      <label for="signupTab">Signup</label>
-    </div>
+<!-- Popup -->
+<div id="popup" class="popup hidden">
+  <p>✅ Message has been sent!</p>
+  <button id="closePopup">Close</button>
+</div>
 
-    <!-- Login Form -->
-    <form id="loginForm">
-      <input type="email" id="loginEmail" name="login_email" placeholder="Email Address" required>
-      <input type="password" id="loginPassword" name="login_password" placeholder="Password" required>
-      <a href="#" id="forgotPassword">Forgot password?</a>
-      <button type="submit">Login</button>
-    </form>
+<div id="stars" class="stars hidden"></div>
 
-    <!-- Signup Form -->
-    <form id="signupForm" class="hidden">
-      <input type="email" id="signupEmail" name="signup_email" placeholder="Email Address" required>
-      <input type="password" id="signupPassword" name="signup_password" placeholder="Password" required>
-      <input type="password" id="confirmPassword" name="confirm_password" placeholder="Confirm Password" required>
-      <button type="submit">Signup</button>
-    </form>
-  </div> <!-- ✅ enquiry-container closed here -->
-
-  <!-- Stars animation container -->
-  <div id="stars" class="stars hidden"></div>
-
-  <!-- Popup -->
-  <div id="popup" class="popup hidden">
-    <p>✅ Email has been sent!</p>
-    <button id="closePopup">Close</button>
-  </div>
-
-  <!-- Footer OUTSIDE the box -->
+ 
   <footer>
     <p>Copyright © 2026 Jason Bakery. All rights reserved.</p>
   </footer>
 
-  <!-- Bottom navigation bar OUTSIDE the box -->
-  <nav class="navbar">
+
+
+
+
+
+ <!-- Bottom navigation bar OUTSIDE the box -->
+<nav class="navbar navbar-bottom">
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About Us</a></li>
       <li><a href="product.html">Products</a></li>
       <li><a href="enquiry.html">Enquiry</a></li>
       <li><a href="contact.html">Contact</a></li>
+      <li><a href="account.html">Account</a></li>
     </ul>
   </nav>
 
